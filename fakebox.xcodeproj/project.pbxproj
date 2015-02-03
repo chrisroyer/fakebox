@@ -20,6 +20,7 @@
 		7680263B1A7DDA500043154A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7680263A1A7DDA500043154A /* Images.xcassets */; };
 		7680263E1A7DDA500043154A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7680263C1A7DDA500043154A /* LaunchScreen.xib */; };
 		7680264A1A7DDA500043154A /* fakeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768026491A7DDA500043154A /* fakeboxTests.swift */; };
+		76F712B71A807FB700388CEA /* SignedInSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F712B61A807FB700388CEA /* SignedInSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		768026431A7DDA500043154A /* fakeboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fakeboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768026481A7DDA500043154A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768026491A7DDA500043154A /* fakeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakeboxTests.swift; sourceTree = "<group>"; };
+		76F712B61A807FB700388CEA /* SignedInSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedInSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				763A501E1A7E154E003C7A64 /* SettingsViewController.swift */,
 				763A504E1A7F34A4003C7A64 /* TroubleSigninViewController.swift */,
 				763A50501A7F3972003C7A64 /* PhotosViewController.swift */,
+				76F712B61A807FB700388CEA /* SignedInSettingsViewController.swift */,
 			);
 			path = fakebox;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				768026341A7DDA500043154A /* AppDelegate.swift in Sources */,
 				763A501D1A7E0C79003C7A64 /* TermsViewController.swift in Sources */,
 				763A501F1A7E154E003C7A64 /* SettingsViewController.swift in Sources */,
+				76F712B71A807FB700388CEA /* SignedInSettingsViewController.swift in Sources */,
 				763A50511A7F3972003C7A64 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

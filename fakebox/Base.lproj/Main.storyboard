@@ -493,7 +493,7 @@
                         <segue destination="fcE-lk-8T8" kind="relationship" relationship="viewControllers" id="mCv-cY-vde"/>
                         <segue destination="PkF-kc-NXc" kind="relationship" relationship="viewControllers" id="LYl-bx-XU5"/>
                         <segue destination="rhL-aS-bsJ" kind="relationship" relationship="viewControllers" id="GzI-YC-6K9"/>
-                        <segue destination="VNz-kw-NyC" kind="relationship" relationship="viewControllers" id="tGK-kN-YpW"/>
+                        <segue destination="Wxa-bB-SNo" kind="relationship" relationship="viewControllers" id="dZw-jL-TuD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjb-1w-DaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,7 +515,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N11-aa-j5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="2406"/>
+            <point key="canvasLocation" x="586" y="2406"/>
         </scene>
         <!--Files-->
         <scene sceneID="fHA-m5-RvU">
@@ -536,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oec-X1-ozr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="3096"/>
+            <point key="canvasLocation" x="586" y="3096"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Zur-zs-wuq">
@@ -553,7 +553,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9K-vh-4nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="2406"/>
+            <point key="canvasLocation" x="996" y="2406"/>
         </scene>
         <!--Photos-->
         <scene sceneID="fc3-QH-Spa">
@@ -576,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTh-ow-yH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="3096"/>
+            <point key="canvasLocation" x="996" y="3096"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="oCQ-JO-LTp">
@@ -597,7 +597,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1d-hq-jqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818" y="3096"/>
+            <point key="canvasLocation" x="1396" y="3096"/>
+        </scene>
+        <!--Signed In Settings View Controller-->
+        <scene sceneID="Xhm-7k-5md">
+            <objects>
+                <viewController id="cj4-6n-Ccd" customClass="SignedInSettingsViewController" customModule="fakebox" customModuleProvider="target" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qUj-Z4-OKd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="img-Es-jox" customClass="s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nh0-o8-E8C">
+                                <rect key="frame" x="0.0" y="692" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DidPressSignOutButton:" destination="cj4-6n-Ccd" eventType="touchUpInside" id="pcK-3j-4Ik"/>
+                                    <segue destination="jQa-Aa-gMi" kind="modal" modalTransitionStyle="crossDissolve" id="LvU-GU-g3V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </scrollView>
+                    <navigationItem key="navigationItem" id="1mt-g2-FPr"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="800"/>
+                    <connections>
+                        <outlet property="SettingsScrollView" destination="qUj-Z4-OKd" id="F3h-zd-Jyd"/>
+                        <outlet property="SignOutButton" destination="Nh0-o8-E8C" id="DMW-2k-e3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzn-Dd-JRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824" y="3212"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="05r-Fh-sEY">
@@ -614,7 +651,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xv3-8r-jzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818" y="2406"/>
+            <point key="canvasLocation" x="1396" y="2406"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="wNA-Jv-2u8">
+            <objects>
+                <navigationController id="Wxa-bB-SNo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="Wo8-1J-RYd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CGz-Km-Kfz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cj4-6n-Ccd" kind="relationship" relationship="rootViewController" id="KY0-Xj-4AQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gD-tt-YXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824" y="2406"/>
         </scene>
         <!--Files-->
         <scene sceneID="kC1-ba-eFP">
@@ -737,6 +791,7 @@
         <scene sceneID="9uZ-v6-7Wh">
             <objects>
                 <navigationController navigationBarHidden="YES" id="jQa-Aa-gMi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BPK-nI-5EJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="frQ-Gv-aUN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -861,7 +916,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tGK-kN-YpW"/>
+        <segue reference="LvU-GU-g3V"/>
         <segue reference="qL4-wr-sUz"/>
         <segue reference="2lJ-Sr-QGV"/>
     </inferredMetricsTieBreakers>
